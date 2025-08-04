@@ -1,0 +1,15 @@
+services:
+  - type: web
+    name: social-media-bot
+    runtime: python
+    buildCommand: pip install -r requirements.txt
+    startCommand: python main.py
+    envVars:
+      - key: ENCRYPTION_KEY
+        generateValue: true
+      - key: YOUTUBE_REFRESH_TOKEN
+        fromGroup: env
+      - key: INSTAGRAM_PASSWORD
+        fromGroup: env
+      - key: FB_ACCESS_TOKEN
+        fromGroup: env

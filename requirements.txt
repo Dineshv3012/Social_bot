@@ -1,0 +1,6 @@
+google-api-python-client>=2.0.0
+instagrapi>=1.0.0
+facebook-business>=11.0.0
+python-dotenv>=0.15.0
+cryptography>=3.4.0
+ffmpeg-python>=0.2.0
