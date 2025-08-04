@@ -1,4 +1,4 @@
-services:
+ services:
   - type: worker  # Not "web"
     name: social-media-bot-worker
     startCommand: python src/main.py
