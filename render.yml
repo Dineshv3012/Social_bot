@@ -1,4 +1,9 @@
- services:
-  - type: worker  # Not "web"
-    name: social-media-bot-worker
-    startCommand: python src/main.py
+services:
+  - type: worker
+    name: social-media-bot
+    runtime: python
+    buildCommand: pip install -r requirements.txt
+    startCommand: python src/main.py --scheduler
+    envVars:
+      - key: ENCRYPTION_KEY
+        generateValue: true
