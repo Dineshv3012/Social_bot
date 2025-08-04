@@ -1,9 +1,11 @@
 services:
-  - type: worker
+  - type: web
     name: social-media-bot
-    runtime: python
-    buildCommand: pip install -r requirements.txt
-    startCommand: python src/main.py --scheduler
+    env: python
+    plan: free
+    buildCommand: ""
+    startCommand: python D.py
     envVars:
       - key: ENCRYPTION_KEY
-        generateValue: true
+        value: your_generated_key
+    autoDeploy: false
