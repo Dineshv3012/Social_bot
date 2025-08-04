@@ -1,0 +1,17 @@
+{
+    "youtube": {
+        "client_id": "your_youtube_client_id",
+        "client_secret": "your_youtube_client_secret",
+        "refresh_token": "your_youtube_refresh_token"
+    },
+    "instagram": {
+        "username": "your_instagram_username",
+        "password": "your_instagram_password"
+    },
+    "facebook": {
+        "app_id": "your_facebook_app_id",
+        "app_secret": "your_facebook_app_secret",
+        "access_token": "your_facebook_access_token",
+        "page_id": "your_facebook_page_id"
+    }
+}

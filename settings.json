@@ -1,0 +1,22 @@
+{
+    "platforms": {
+        "youtube": {
+            "type": "video",
+            "title": "Default Title",
+            "description": "Default Description",
+            "tags": ["tag1", "tag2"],
+            "category": "22",
+            "privacy": "public"
+        },
+        "instagram": {
+            "type": "feed",
+            "caption": "Default Caption"
+        },
+        "facebook": {
+            "type": "feed",
+            "message": "Default Message"
+        }
+    },
+    "default_platforms": ["youtube", "instagram", "facebook"]
+}
+        
