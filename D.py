@@ -324,8 +324,5 @@ class SocialMediaBot:
 
 if __name__ == "__main__":
     bot = SocialMediaBot()
-    
-    if not bot.clients:
-        print("No social media clients initialized. Check your configuration.")
-    else:
-        bot.interactive_menu()
+    if bot.clients:
+        bot.process_upload_folder()  # Automatically processes uploads
